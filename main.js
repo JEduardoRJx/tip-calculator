@@ -7,6 +7,7 @@ let clearBtn = document.querySelector('.clear-btn');
 window.addEventListener('load', handlePageLoad);
 billAmountInput.addEventListener('keyup', calcBtnStatus);
 numOfPeopleInput.addEventListener('keyup', calcBtnStatus);
+calcBtn.addEventListener('click', calcTip);
 
 
 function handlePageLoad() {
