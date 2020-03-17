@@ -4,10 +4,36 @@
   <title>Tip Calculator</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">where to 
+  <link rel="stylesheet" href="style.scss">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet"> 
 </head>
 <body>
   
+  <h1>TIP CALCULATOR</h1>
+
+  <form>
+    <label for='amount'>Bill Amount:</label>
+    <p>
+      $ <input type='text' name='amount' id='amount'/>
+    </p>
+    <label for='service'>Rate Your Service:</label>
+    <select>
+      <option value='0' selected='selected' disabled hidden>--</option>
+      <option value='.3'>30% | Wonderful</option>
+      <option value='.2'>20% | Great</option>
+      <option value='.15'>15% | Decent</option>
+      <option value='.10'>10% | Bad</option>
+      <option value='.05'>5% | Terrible</option>
+    </select>
+      <label label'numpeople'>Number of People Splitting the Bill:</label>
+    <p>
+      <input type='text' name='numpeople' id='numofpeople'/> People
+    </p>
+    <div class='btns'>
+        <button class='cacl-btn' type='button'>CALCULATE</button>
+        <button class='clear-btn'type='button'>CLEAR</button>
+    </div>
+
 </body>
 <script type='text/javascript' src='main.js'></script>
 </html>
