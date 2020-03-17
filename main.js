@@ -35,3 +35,13 @@ function calcTip() {
   total = total.toFixed(2)
   renderTip(total);
 }
+
+function renderTip(total) {
+  clearTip();
+  body.insertAdjacentHTML('beforeend', `
+  <div class='tip'> 
+    <h1 class='tip'>TIP AMOUNT</h1>
+    <h1 class='tip'>$${total} Each</h1>
+  </div>
+`)
+}
