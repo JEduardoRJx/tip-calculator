@@ -54,6 +54,7 @@ button {
   align-self: center;
   background-color:white;
   color:black;
+  outline:none;
 }
 
 button:disabled {
