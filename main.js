@@ -49,7 +49,15 @@ function renderTip(total) {
 function clearTip() {
   let sibiling = document.querySelector('.tip')
   if (sibiling) {
-    console.log('AYYY')
     sibiling.parentNode.removeChild(sibiling);
  }
+}
+
+function clearInputs() {
+  let serviceRating = document.querySelector('select')
+  serviceRating.value = 'None'
+  billAmountInput.value = ''
+  numOfPeopleInput.value = ''
+  calcBtnStatus()
+  clearTip();
 }
