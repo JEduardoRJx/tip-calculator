@@ -45,3 +45,11 @@ function renderTip(total) {
   </div>
 `)
 }
+
+function clearTip() {
+  let sibiling = document.querySelector('.tip')
+  if (sibiling) {
+    console.log('AYYY')
+    sibiling.parentNode.removeChild(sibiling);
+ }
+}
