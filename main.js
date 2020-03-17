@@ -1,10 +1,12 @@
-let body = document.querySelector('body')
-let billAmountInput = document.querySelector('.amount')
-let numOfPeopleInput = document.querySelector('.numofpeople')
-let calcBtn = document.querySelector('.calc-btn')
-let clearBtn = document.querySelector('.clear-btn')
+let body = document.querySelector('body');
+let billAmountInput = document.querySelector('.amount');
+let numOfPeopleInput = document.querySelector('.numofpeople');
+let calcBtn = document.querySelector('.calc-btn');
+let clearBtn = document.querySelector('.clear-btn');
 
 window.addEventListener('load', handlePageLoad);
+billAmountInput.addEventListener('keyup', calcBtnStatus);
+numOfPeopleInput.addEventListener('keyup', calcBtnStatus);
 
 
 function handlePageLoad() {
@@ -12,11 +14,11 @@ function handlePageLoad() {
 }
 
 function calcBtnStatus() {
-  let billAmount = parseFloat(billAmountInput.value)
-  let numOfPeople = parseFloat(numOfPeopleInput.value)
+  let billAmount = parseFloat(billAmountInput.value);
+  let numOfPeople = parseFloat(numOfPeopleInput.value);
   if ( billAmount > 0 && numOfPeople > 0) {
     calcBtn.disabled = false;
-    clearBtn.disabled = false
+    clearBtn.disabled = false;
   } else {
     calcBtn.disabled = true;
     clearBtn.disabled = true;
