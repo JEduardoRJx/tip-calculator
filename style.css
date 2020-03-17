@@ -5,3 +5,27 @@
   padding: 0;
   transition: ease all .3s;
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(#48acf0, #f7f9f9);
+}
+
+form {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 400px;
+  height: 300px;
+}
+
+.btns-wrapper {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
