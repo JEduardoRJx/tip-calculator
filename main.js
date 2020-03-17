@@ -25,3 +25,13 @@ function calcBtnStatus() {
     clearBtn.disabled = true;
   }
 }
+
+function calcTip() {
+  let billAmount = parseFloat(billAmountInput.value)
+  let numOfPeople = parseFloat(numOfPeopleInput.value)
+  let serviceRating = parseFloat(document.querySelector('select').value)
+  let total = (billAmount * serviceRating) / numOfPeople;
+  total = Math.round(total * 100) / 100
+  total = total.toFixed(2)
+  renderTip(total);
+}
