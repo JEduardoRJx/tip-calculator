@@ -8,7 +8,7 @@ window.addEventListener('load', handlePageLoad);
 billAmountInput.addEventListener('keyup', calcBtnStatus);
 numOfPeopleInput.addEventListener('keyup', calcBtnStatus);
 calcBtn.addEventListener('click', calcTip);
-
+clearBtn.addEventListener('click', clearInputs)
 
 function handlePageLoad() {
   calcBtnStatus();
