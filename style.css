@@ -67,3 +67,9 @@ button:enabled:hover {
   color: white;
   cursor: pointer;
 }
+
+@media screen and (max-width: 450px) {
+  form {
+    width: 90%;
+  }
+}
