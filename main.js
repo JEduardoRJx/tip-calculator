@@ -8,5 +8,6 @@ window.addEventListener('load', handlePageLoad);
 
 
 function handlePageLoad() {
-  
+  calcBtnStatus();
 }
+
